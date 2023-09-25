@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="RestaurantCell" id="iN0-l3-epB" customClass="RestaurantCell" customModule="YelpMe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="548" height="144"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Qqk-bh-srA">
+                    <rect key="frame" x="8" y="20" width="532" height="104"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9O-Kb-LPN">
+                            <rect key="frame" x="0.0" y="0.0" width="532" height="26"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VJ-y1-EgY">
+                            <rect key="frame" x="0.0" y="26" width="532" height="26"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYb-B8-2Ly">
+                            <rect key="frame" x="0.0" y="52" width="532" height="26"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iC7-k6-wqO">
+                            <rect key="frame" x="0.0" y="78" width="532" height="26"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="3VJ-y1-EgY" secondAttribute="trailing" id="2kU-WK-Azd"/>
+                        <constraint firstItem="k9O-Kb-LPN" firstAttribute="leading" secondItem="Qqk-bh-srA" secondAttribute="leading" id="Dya-x2-N9l"/>
+                        <constraint firstItem="DYb-B8-2Ly" firstAttribute="top" secondItem="3VJ-y1-EgY" secondAttribute="bottom" id="mec-2o-FE5"/>
+                        <constraint firstAttribute="trailing" secondItem="k9O-Kb-LPN" secondAttribute="trailing" id="vBr-Zq-C3L"/>
+                        <constraint firstItem="3VJ-y1-EgY" firstAttribute="leading" secondItem="Qqk-bh-srA" secondAttribute="leading" id="vyX-7a-7sF"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Qqk-bh-srA" secondAttribute="trailing" constant="8" id="RKy-KM-njD"/>
+                <constraint firstItem="Qqk-bh-srA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="ext-va-Wyr"/>
+                <constraint firstAttribute="bottom" secondItem="Qqk-bh-srA" secondAttribute="bottom" constant="20" id="mlu-mI-PtL"/>
+                <constraint firstItem="Qqk-bh-srA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="nbx-n0-By2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="address1" destination="3VJ-y1-EgY" id="XFZ-h1-N7Q"/>
+                <outlet property="cityStateZip" destination="DYb-B8-2Ly" id="bnN-Z4-LkL"/>
+                <outlet property="name" destination="k9O-Kb-LPN" id="T2o-Xd-4e2"/>
+                <outlet property="url" destination="iC7-k6-wqO" id="Hx0-Lc-7eA"/>
+            </connections>
+            <point key="canvasLocation" x="220.28985507246378" y="-1127.6785714285713"/>
+        </view>
+    </objects>
+</document>
